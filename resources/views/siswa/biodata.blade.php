@@ -89,7 +89,14 @@
                             </div>
                             <div class="form-group">
                                 <label>Ketunaan</label>
-                                <input type="text" class="form-control" name="ketunaan" id="ketunaan" value="{{ $siswa->ketunaan }}">
+                                <select class="form-control select2bs4" name="ketunaan" id="ketunaan">
+                                    <option value="Tunanetra" <?= ($siswa->ketunaan == "Tunanetra") ? "selected" : "" ?>>Tunanetra</option>
+                                    <option value="Tunarungu" <?= ($siswa->ketunaan == "Tunarungu") ? "selected" : "" ?>>Tunarungu</option>
+                                    <option value="Tunagrahita" <?= ($siswa->ketunaan == "Tunagrahita") ? "selected" : "" ?>>Tunagrahita</option>
+                                    <option value="Tunadaksa" <?= ($siswa->ketunaan == "Tunadaksa") ? "selected" : "" ?>>Tunadaksa</option>
+                                    <option value="Autisme" <?= ($siswa->ketunaan == "Autisme") ? "selected" : "" ?>>Autisme</option>
+                                </select>
+                                <!-- <input type="text" class="form-control" name="ketunaan" id="ketunaan" value="{{ $siswa->ketunaan }}"> -->
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-primary" style="float: right;" onclick="edit()">Simpan</button>

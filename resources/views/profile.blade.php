@@ -134,7 +134,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-items">
-                    <div class="col-md-6 about-info" style="text-align: justify;">
+                    <div class="col-md-6 about-info">
                         <h2>Selamat Datang di {{ $profile->nama_sekolah }}</h2>
                         <h3></h3>
                         <blockquote>
